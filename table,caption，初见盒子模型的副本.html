@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置表格的边框 */
+        table,th,td{
+            border:1px solid black;
+            /* 将重复的边框合并 */
+            border-collapse:collapse;
+        }
+        caption{
+            /* 设置表内距离 */
+            padding:10px;
+        }
+        /* thead th{
+            background-color: gray;
+            color:white;
+        }
+        tbody th{
+            background-color: lightgray;
+            color: black;
+        } */
+    </style>
+</head>
+<body>
+    <table>
+        <caption>这是标题</caption>
+        <colgroup>
+            <col style="background-color: aqua;">
+            <col span="2" style="background-color: bisque;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>照片</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>张杰</th>
+                <td>20</td>
+                <td><img src="/兔子.png" width="50"></td>
+            </tr>
+            <tr>
+                <th>张杰杰</th>
+                <td>40</td>
+                <td><img src="/紫色大海参.png" width="50"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan是跨行 -->
+                <!-- rowspan是跨列 -->
+                <td colspan="3">这是用于说明的表尾</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

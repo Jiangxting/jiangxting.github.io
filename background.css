@@ -1,0 +1,8 @@
+body{
+    width: 1000px;
+    height: 1000px;
+    background-image: url("/img/Cloudy_Ocean_BG.png");
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    /* background-position: center; */
+}
